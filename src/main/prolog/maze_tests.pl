@@ -186,8 +186,7 @@ make_test_term(O,Visitor2,Term,Count,Value,Rel1,Start) :-
 		QueueType = priority(map:total_distance(Target),UpperBoundSym) 
 	    ) ;
 	    QueueType = normal
-	  ) ; true),
-	format('traversal=~p, queue_type=~p, upperboundsym=~p\n',[O.traversal,QueueType,UpperBoundSym]),  
+	  ) ; true),  
 	(O.order = reorder -> Rel1 = map:reorder_by_distance(Target,Rel) ; Rel1 = Rel),
 	(O.search_type = exhaustive -> T1 = look_for_node(Target,find_best(graph:compare_path_lengths,UpperBoundSym,Value)) ;
 	                               T1 = bound(map:distance_bounds(Target),compare,Value)),	                              

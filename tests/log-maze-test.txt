@@ -1,0 +1,872 @@
+Maze Test
+-----------------------
+Options:
+   maze: maze3,
+   traversal: dft,
+   order: keep,
+   search_type: exhaustive,
+   rounds: 10.
+   time_limit_per_round: 6000
+   trace_visit: no
+   queue_type: _G7969
+------------------------
+Running the test(time limit: 60.0 s): 
+strategy failed: could not find a solution !
+Maze Test
+-----------------------
+Options:
+   maze: maze3,
+   traversal: dft,
+   order: keep,
+   search_type: branch_and_bound,
+   rounds: 10.
+   time_limit_per_round: 6000
+   trace_visit: no
+   queue_type: _G47
+------------------------
+Running the test(time limit: 60.0 s): 10.9.8.7.6.5.4.3.2.!
+Strategy succeeded!
+Path: [s(7),e(5),s,e(2),n]
+Total time: 841.1998420000089 ms
+Mean time: 84.11998420000089 ms
+Number of steps: 223
+Maze Test
+-----------------------
+Options:
+   maze: maze3,
+   traversal: dft,
+   order: reorder,
+   search_type: exhaustive,
+   rounds: 10.
+   time_limit_per_round: 6000
+   trace_visit: no
+   queue_type: _G47
+------------------------
+Running the test(time limit: 60.0 s): 
+strategy failed: could not find a solution !
+Maze Test
+-----------------------
+Options:
+   maze: maze3,
+   traversal: dft,
+   order: reorder,
+   search_type: branch_and_bound,
+   rounds: 10.
+   time_limit_per_round: 6000
+   trace_visit: no
+   queue_type: _G47
+------------------------
+Running the test(time limit: 60.0 s): 10.9.8.7.6.5.4.3.2.!
+Strategy succeeded!
+Path: [s(4),e(8),s(2),w,s]
+Total time: 1034.3034340000088 ms
+Mean time: 103.43034340000088 ms
+Number of steps: 285
+Maze Test
+-----------------------
+Options:
+   maze: maze3,
+   traversal: idt,
+   order: keep,
+   search_type: exhaustive,
+   rounds: 10.
+   time_limit_per_round: 6000
+   trace_visit: no
+   queue_type: _G47
+------------------------
+Running the test(time limit: 60.0 s): 
+strategy failed: could not find a solution !
+Maze Test
+-----------------------
+Options:
+   maze: maze3,
+   traversal: idt,
+   order: keep,
+   search_type: branch_and_bound,
+   rounds: 10.
+   time_limit_per_round: 6000
+   trace_visit: no
+   queue_type: _G47
+------------------------
+Running the test(time limit: 60.0 s): 10.9.8.7.6.5.4.3.2.
+strategy failed: could not find a solution !
+Maze Test
+-----------------------
+Options:
+   maze: maze3,
+   traversal: idt,
+   order: reorder,
+   search_type: exhaustive,
+   rounds: 10.
+   time_limit_per_round: 6000
+   trace_visit: no
+   queue_type: _G47
+------------------------
+Running the test(time limit: 60.0 s): 
+strategy failed: could not find a solution !
+Maze Test
+-----------------------
+Options:
+   maze: maze3,
+   traversal: idt,
+   order: reorder,
+   search_type: branch_and_bound,
+   rounds: 10.
+   time_limit_per_round: 6000
+   trace_visit: no
+   queue_type: _G47
+------------------------
+Running the test(time limit: 60.0 s): 10.9.8.7.6.5.4.3.2.
+strategy failed: could not find a solution !
+Maze Test
+-----------------------
+Options:
+   maze: maze3,
+   traversal: bft,
+   order: keep,
+   search_type: exhaustive,
+   rounds: 10.
+   time_limit_per_round: 6000
+   trace_visit: no
+   queue_type: normal
+------------------------
+Running the test(time limit: 60.0 s): 
+strategy failed: could not find a solution !
+Maze Test
+-----------------------
+Options:
+   maze: maze3,
+   traversal: bft,
+   order: keep,
+   search_type: exhaustive,
+   rounds: 10.
+   time_limit_per_round: 6000
+   trace_visit: no
+   queue_type: priority
+------------------------
+Running the test(time limit: 60.0 s): 
+strategy failed: could not find a solution !
+Maze Test
+-----------------------
+Options:
+   maze: maze3,
+   traversal: bft,
+   order: keep,
+   search_type: branch_and_bound,
+   rounds: 10.
+   time_limit_per_round: 6000
+   trace_visit: no
+   queue_type: normal
+------------------------
+Running the test(time limit: 60.0 s): 10.9.8.7.6.5.4.3.2.!
+Strategy succeeded!
+Path: [s(7),e(5),s,e(2),n]
+Total time: 341.42122200000813 ms
+Mean time: 34.14212220000081 ms
+Number of steps: 101
+Maze Test
+-----------------------
+Options:
+   maze: maze3,
+   traversal: bft,
+   order: keep,
+   search_type: branch_and_bound,
+   rounds: 10.
+   time_limit_per_round: 6000
+   trace_visit: no
+   queue_type: priority
+------------------------
+Running the test(time limit: 60.0 s): 10.9.8.7.6.5.4.3.2.!
+Strategy succeeded!
+Path: [s(4),e(4),s(3),e,s,e(2),n]
+Total time: 362.312811999999 ms
+Mean time: 36.2312811999999 ms
+Number of steps: 101
+Maze Test
+-----------------------
+Options:
+   maze: maze3,
+   traversal: bft,
+   order: reorder,
+   search_type: exhaustive,
+   rounds: 10.
+   time_limit_per_round: 6000
+   trace_visit: no
+   queue_type: normal
+------------------------
+Running the test(time limit: 60.0 s): 
+strategy failed: could not find a solution !
+Maze Test
+-----------------------
+Options:
+   maze: maze3,
+   traversal: bft,
+   order: reorder,
+   search_type: exhaustive,
+   rounds: 10.
+   time_limit_per_round: 6000
+   trace_visit: no
+   queue_type: priority
+------------------------
+Running the test(time limit: 60.0 s): 
+strategy failed: could not find a solution !
+Maze Test
+-----------------------
+Options:
+   maze: maze3,
+   traversal: bft,
+   order: reorder,
+   search_type: branch_and_bound,
+   rounds: 10.
+   time_limit_per_round: 6000
+   trace_visit: no
+   queue_type: normal
+------------------------
+Running the test(time limit: 60.0 s): 10.9.8.7.6.5.4.3.2.!
+Strategy succeeded!
+Path: [s(4),e(8),s(2),w,s]
+Total time: 347.21156200001246 ms
+Mean time: 34.721156200001246 ms
+Number of steps: 101
+Maze Test
+-----------------------
+Options:
+   maze: maze3,
+   traversal: bft,
+   order: reorder,
+   search_type: branch_and_bound,
+   rounds: 10.
+   time_limit_per_round: 6000
+   trace_visit: no
+   queue_type: priority
+------------------------
+Running the test(time limit: 60.0 s): 10.9.8.7.6.5.4.3.2.!
+Strategy succeeded!
+Path: [s(4),e(4),s(3),e,s,e(2),n]
+Total time: 369.38970500000323 ms
+Mean time: 36.93897050000032 ms
+Number of steps: 101
+Maze Test
+-----------------------
+Options:
+   maze: maze2,
+   traversal: dft,
+   order: keep,
+   search_type: exhaustive,
+   rounds: 10.
+   time_limit_per_round: 6000
+   trace_visit: no
+   queue_type: _G47
+------------------------
+Running the test(time limit: 60.0 s): 
+strategy failed: could not find a solution !
+Maze Test
+-----------------------
+Options:
+   maze: maze2,
+   traversal: dft,
+   order: keep,
+   search_type: branch_and_bound,
+   rounds: 10.
+   time_limit_per_round: 6000
+   trace_visit: no
+   queue_type: _G47
+------------------------
+Running the test(time limit: 60.0 s): 10.9.8.7.6.
+strategy failed: could not find a solution !
+Maze Test
+-----------------------
+Options:
+   maze: maze2,
+   traversal: dft,
+   order: reorder,
+   search_type: exhaustive,
+   rounds: 10.
+   time_limit_per_round: 6000
+   trace_visit: no
+   queue_type: _G47
+------------------------
+Running the test(time limit: 60.0 s): 
+strategy failed: could not find a solution !
+Maze Test
+-----------------------
+Options:
+   maze: maze2,
+   traversal: dft,
+   order: reorder,
+   search_type: branch_and_bound,
+   rounds: 10.
+   time_limit_per_round: 6000
+   trace_visit: no
+   queue_type: _G47
+------------------------
+Running the test(time limit: 60.0 s): 10.9.8.7.6.5.
+strategy failed: could not find a solution !
+Maze Test
+-----------------------
+Options:
+   maze: maze2,
+   traversal: idt,
+   order: keep,
+   search_type: exhaustive,
+   rounds: 10.
+   time_limit_per_round: 6000
+   trace_visit: no
+   queue_type: _G47
+------------------------
+Running the test(time limit: 60.0 s): 
+strategy failed: could not find a solution !
+Maze Test
+-----------------------
+Options:
+   maze: maze2,
+   traversal: idt,
+   order: keep,
+   search_type: branch_and_bound,
+   rounds: 10.
+   time_limit_per_round: 6000
+   trace_visit: no
+   queue_type: _G47
+------------------------
+Running the test(time limit: 60.0 s): 
+strategy failed: could not find a solution !
+Maze Test
+-----------------------
+Options:
+   maze: maze2,
+   traversal: idt,
+   order: reorder,
+   search_type: exhaustive,
+   rounds: 10.
+   time_limit_per_round: 6000
+   trace_visit: no
+   queue_type: _G47
+------------------------
+Running the test(time limit: 60.0 s): 
+strategy failed: could not find a solution !
+Maze Test
+-----------------------
+Options:
+   maze: maze2,
+   traversal: idt,
+   order: reorder,
+   search_type: branch_and_bound,
+   rounds: 10.
+   time_limit_per_round: 6000
+   trace_visit: no
+   queue_type: _G47
+------------------------
+Running the test(time limit: 60.0 s): 
+strategy failed: could not find a solution !
+Maze Test
+-----------------------
+Options:
+   maze: maze2,
+   traversal: bft,
+   order: keep,
+   search_type: exhaustive,
+   rounds: 10.
+   time_limit_per_round: 6000
+   trace_visit: no
+   queue_type: normal
+------------------------
+Running the test(time limit: 60.0 s): 
+strategy failed: could not find a solution !
+Maze Test
+-----------------------
+Options:
+   maze: maze2,
+   traversal: bft,
+   order: keep,
+   search_type: exhaustive,
+   rounds: 10.
+   time_limit_per_round: 6000
+   trace_visit: no
+   queue_type: priority
+------------------------
+Running the test(time limit: 60.0 s): 
+strategy failed: could not find a solution !
+Maze Test
+-----------------------
+Options:
+   maze: maze2,
+   traversal: bft,
+   order: keep,
+   search_type: branch_and_bound,
+   rounds: 10.
+   time_limit_per_round: 6000
+   trace_visit: no
+   queue_type: normal
+------------------------
+Running the test(time limit: 60.0 s): 10.9.8.7.6.5.4.3.2.!
+Strategy succeeded!
+Path: [s(4),e(2),s,e(5),s(4),e(2),n(7),w(4)]
+Total time: 510.7385759999943 ms
+Mean time: 51.07385759999943 ms
+Number of steps: 179
+Maze Test
+-----------------------
+Options:
+   maze: maze2,
+   traversal: bft,
+   order: keep,
+   search_type: branch_and_bound,
+   rounds: 10.
+   time_limit_per_round: 6000
+   trace_visit: no
+   queue_type: priority
+------------------------
+Running the test(time limit: 60.0 s): 10.9.8.7.6.5.4.3.2.!
+Strategy succeeded!
+Path: [e(3),s(4),e(4),s(5),e(2),n(7),w(4)]
+Total time: 541.293636999967 ms
+Mean time: 54.1293636999967 ms
+Number of steps: 177
+Maze Test
+-----------------------
+Options:
+   maze: maze2,
+   traversal: bft,
+   order: reorder,
+   search_type: exhaustive,
+   rounds: 10.
+   time_limit_per_round: 6000
+   trace_visit: no
+   queue_type: normal
+------------------------
+Running the test(time limit: 60.0 s): 
+strategy failed: could not find a solution !
+Maze Test
+-----------------------
+Options:
+   maze: maze2,
+   traversal: bft,
+   order: reorder,
+   search_type: exhaustive,
+   rounds: 10.
+   time_limit_per_round: 6000
+   trace_visit: no
+   queue_type: priority
+------------------------
+Running the test(time limit: 60.0 s): 
+strategy failed: could not find a solution !
+Maze Test
+-----------------------
+Options:
+   maze: maze2,
+   traversal: bft,
+   order: reorder,
+   search_type: branch_and_bound,
+   rounds: 10.
+   time_limit_per_round: 6000
+   trace_visit: no
+   queue_type: normal
+------------------------
+Running the test(time limit: 60.0 s): 10.9.8.7.6.5.4.3.2.!
+Strategy succeeded!
+Path: [e(3),s(4),e(4),s(5),e(2),n(7),w(4)]
+Total time: 519.7372620000351 ms
+Mean time: 51.97372620000351 ms
+Number of steps: 179
+Maze Test
+-----------------------
+Options:
+   maze: maze2,
+   traversal: bft,
+   order: reorder,
+   search_type: branch_and_bound,
+   rounds: 10.
+   time_limit_per_round: 6000
+   trace_visit: no
+   queue_type: priority
+------------------------
+Running the test(time limit: 60.0 s): 10.9.8.7.6.5.4.3.2.!
+Strategy succeeded!
+Path: [e(3),s(4),e(4),s(5),e(2),n(7),w(4)]
+Total time: 553.7695630000599 ms
+Mean time: 55.376956300005986 ms
+Number of steps: 177
+Maze Test
+-----------------------
+Options:
+   maze: maze1,
+   traversal: dft,
+   order: keep,
+   search_type: exhaustive,
+   rounds: 10.
+   time_limit_per_round: 6000
+   trace_visit: no
+   queue_type: _G47
+------------------------
+Running the test(time limit: 60.0 s): 
+strategy failed: could not find a solution !
+Maze Test
+-----------------------
+Options:
+   maze: maze1,
+   traversal: dft,
+   order: keep,
+   search_type: branch_and_bound,
+   rounds: 10.
+   time_limit_per_round: 6000
+   trace_visit: no
+   queue_type: _G47
+------------------------
+Running the test(time limit: 60.0 s): 10.9.8.7.6.5.4.3.2.!
+Strategy succeeded!
+Path: [s(4),e(7),s(3)]
+Total time: 715.0723620000008 ms
+Mean time: 71.50723620000008 ms
+Number of steps: 194
+Maze Test
+-----------------------
+Options:
+   maze: maze1,
+   traversal: dft,
+   order: reorder,
+   search_type: exhaustive,
+   rounds: 10.
+   time_limit_per_round: 6000
+   trace_visit: no
+   queue_type: _G47
+------------------------
+Running the test(time limit: 60.0 s): 
+strategy failed: could not find a solution !
+Maze Test
+-----------------------
+Options:
+   maze: maze1,
+   traversal: dft,
+   order: reorder,
+   search_type: branch_and_bound,
+   rounds: 10.
+   time_limit_per_round: 6000
+   trace_visit: no
+   queue_type: _G47
+------------------------
+Running the test(time limit: 60.0 s): 10.9.8.7.6.5.4.3.2.!
+Strategy succeeded!
+Path: [s(4),e(7),s(3)]
+Total time: 746.5012119999983 ms
+Mean time: 74.65012119999983 ms
+Number of steps: 201
+Maze Test
+-----------------------
+Options:
+   maze: maze1,
+   traversal: idt,
+   order: keep,
+   search_type: exhaustive,
+   rounds: 10.
+   time_limit_per_round: 6000
+   trace_visit: no
+   queue_type: _G47
+------------------------
+Running the test(time limit: 60.0 s): 
+strategy failed: could not find a solution !
+Maze Test
+-----------------------
+Options:
+   maze: maze1,
+   traversal: idt,
+   order: keep,
+   search_type: branch_and_bound,
+   rounds: 10.
+   time_limit_per_round: 6000
+   trace_visit: no
+   queue_type: _G47
+------------------------
+Running the test(time limit: 60.0 s): 10.9.8.7.6.5.4.3.2.!
+Strategy succeeded!
+Path: [s(4),e(7),s(3)]
+Total time: 26549.260341000037 ms
+Mean time: 2654.9260341000036 ms
+Number of steps: 201
+Maze Test
+-----------------------
+Options:
+   maze: maze1,
+   traversal: idt,
+   order: reorder,
+   search_type: exhaustive,
+   rounds: 10.
+   time_limit_per_round: 6000
+   trace_visit: no
+   queue_type: _G47
+------------------------
+Running the test(time limit: 60.0 s): 
+strategy failed: could not find a solution !
+Maze Test
+-----------------------
+Options:
+   maze: maze1,
+   traversal: idt,
+   order: reorder,
+   search_type: branch_and_bound,
+   rounds: 10.
+   time_limit_per_round: 6000
+   trace_visit: no
+   queue_type: _G47
+------------------------
+Running the test(time limit: 60.0 s): 10.9.8.7.6.5.4.3.2.!
+Strategy succeeded!
+Path: [s(4),e(7),s(3)]
+Total time: 27035.86963300006 ms
+Mean time: 2703.586963300006 ms
+Number of steps: 201
+Maze Test
+-----------------------
+Options:
+   maze: maze1,
+   traversal: bft,
+   order: keep,
+   search_type: exhaustive,
+   rounds: 10.
+   time_limit_per_round: 6000
+   trace_visit: no
+   queue_type: normal
+------------------------
+Running the test(time limit: 60.0 s): 
+strategy failed: could not find a solution !
+Maze Test
+-----------------------
+Options:
+   maze: maze1,
+   traversal: bft,
+   order: keep,
+   search_type: exhaustive,
+   rounds: 10.
+   time_limit_per_round: 6000
+   trace_visit: no
+   queue_type: priority
+------------------------
+Running the test(time limit: 60.0 s): 
+strategy failed: could not find a solution !
+Maze Test
+-----------------------
+Options:
+   maze: maze1,
+   traversal: bft,
+   order: keep,
+   search_type: branch_and_bound,
+   rounds: 10.
+   time_limit_per_round: 6000
+   trace_visit: no
+   queue_type: normal
+------------------------
+Running the test(time limit: 60.0 s): 10.9.8.7.6.5.4.3.2.!
+Strategy succeeded!
+Path: [s(4),e(7),s(3)]
+Total time: 307.15958799999044 ms
+Mean time: 30.715958799999044 ms
+Number of steps: 89
+Maze Test
+-----------------------
+Options:
+   maze: maze1,
+   traversal: bft,
+   order: keep,
+   search_type: branch_and_bound,
+   rounds: 10.
+   time_limit_per_round: 6000
+   trace_visit: no
+   queue_type: priority
+------------------------
+Running the test(time limit: 60.0 s): 10.9.8.7.6.5.4.3.2.!
+Strategy succeeded!
+Path: [s(4),e(7),s(3)]
+Total time: 324.8199450000584 ms
+Mean time: 32.48199450000584 ms
+Number of steps: 89
+Maze Test
+-----------------------
+Options:
+   maze: maze1,
+   traversal: bft,
+   order: reorder,
+   search_type: exhaustive,
+   rounds: 10.
+   time_limit_per_round: 6000
+   trace_visit: no
+   queue_type: normal
+------------------------
+Running the test(time limit: 60.0 s): 
+strategy failed: could not find a solution !
+Maze Test
+-----------------------
+Options:
+   maze: maze1,
+   traversal: bft,
+   order: reorder,
+   search_type: exhaustive,
+   rounds: 10.
+   time_limit_per_round: 6000
+   trace_visit: no
+   queue_type: priority
+------------------------
+Running the test(time limit: 60.0 s): 
+strategy failed: could not find a solution !
+Maze Test
+-----------------------
+Options:
+   maze: maze1,
+   traversal: bft,
+   order: reorder,
+   search_type: branch_and_bound,
+   rounds: 10.
+   time_limit_per_round: 6000
+   trace_visit: no
+   queue_type: normal
+------------------------
+Running the test(time limit: 60.0 s): 10.9.8.7.6.5.4.3.2.!
+Strategy succeeded!
+Path: [s(4),e(7),s(3)]
+Total time: 314.3088839999564 ms
+Mean time: 31.430888399995638 ms
+Number of steps: 89
+Maze Test
+-----------------------
+Options:
+   maze: maze1,
+   traversal: bft,
+   order: reorder,
+   search_type: branch_and_bound,
+   rounds: 10.
+   time_limit_per_round: 6000
+   trace_visit: no
+   queue_type: priority
+------------------------
+Running the test(time limit: 60.0 s): 10.9.8.7.6.5.4.3.2.!
+Strategy succeeded!
+Path: [s(4),e(7),s(3)]
+Total time: 332.18204100001003 ms
+Mean time: 33.218204100001 ms
+Number of steps: 89
+
+
+
+----------------------------------
+Results:
+  Total tests: 48
+  Total successes: 18
+  Total failures: 30
+Successes:
+   Best time: 30.715958799999044 ms
+   Best runs:
+   All runs:
+     [14] 30.715958799999044 ms: maze_test_options{maze:maze1,order:keep,queue_type:normal,rounds:10,search_type:branch_and_bound,time_limit_per_round:6000,trace_visit:no,traversal:bft}
+       path:[s(4),e(7),s(3)]
+       term: bft(count(_G1975,avoid_repetitions(bound(map:distance_bounds([8,8]),compare,_G1982))),map:map_edge_rel(4,[[w,w,w,w,w,w,w,w,w,w],[w,f,f,f,f,f,f,f,f,w],[w,f,w,w,w,w,w,w,f,w],[w,f,f,f,f,f,f,f,f,w],[w,f,w,w,w,w,w,w,w,w],[w,f,f,f,f,f,f,f,f,w],[w,f,w,f,w,f,w,w,f,w],[w,f,w,f,w,f,w,w,f,w],[w,f,f,f,f,f,f,w,f,w],[w,w,w,w,w,w,w,w,w,w]],10,10),[1,1],maze_test_options{maze:maze1,order:keep,queue_type:normal,rounds:10,search_type:branch_and_bound,time_limit_per_round:6000,trace_visit:no,traversal:bft},_G1972,_G1973)
+     [14] 31.430888399995638 ms: maze_test_options{maze:maze1,order:reorder,queue_type:normal,rounds:10,search_type:branch_and_bound,time_limit_per_round:6000,trace_visit:no,traversal:bft}
+       path:[s(4),e(7),s(3)]
+       term: bft(count(_G1519,avoid_repetitions(bound(map:distance_bounds([8,8]),compare,_G1526))),map:reorder_by_distance([8,8],map:map_edge_rel(4,[[w,w,w,w,w,w,w,w,w,w],[w,f,f,f,f,f,f,f,f,w],[w,f,w,w,w,w,w,w,f,w],[w,f,f,f,f,f,f,f,f,w],[w,f,w,w,w,w,w,w,w,w],[w,f,f,f,f,f,f,f,f,w],[w,f,w,f,w,f,w,w,f,w],[w,f,w,f,w,f,w,w,f,w],[w,f,f,f,f,f,f,w,f,w],[w,w,w,w,w,w,w,w,w,w]],10,10)),[1,1],maze_test_options{maze:maze1,order:reorder,queue_type:normal,rounds:10,search_type:branch_and_bound,time_limit_per_round:6000,trace_visit:no,traversal:bft},_G1516,_G1517)
+     [14] 32.48199450000584 ms: maze_test_options{maze:maze1,order:keep,queue_type:priority,rounds:10,search_type:branch_and_bound,time_limit_per_round:6000,trace_visit:no,traversal:bft}
+       path:[s(4),e(7),s(3)]
+       term: bft(count(_G1075,avoid_repetitions(bound(map:distance_bounds([8,8]),compare,_G1082))),map:map_edge_rel(4,[[w,w,w,w,w,w,w,w,w,w],[w,f,f,f,f,f,f,f,f,w],[w,f,w,w,w,w,w,w,f,w],[w,f,f,f,f,f,f,f,f,w],[w,f,w,w,w,w,w,w,w,w],[w,f,f,f,f,f,f,f,f,w],[w,f,w,f,w,f,w,w,f,w],[w,f,w,f,w,f,w,w,f,w],[w,f,f,f,f,f,f,w,f,w],[w,w,w,w,w,w,w,w,w,w]],10,10),[1,1],maze_test_options{maze:maze1,order:keep,queue_type:priority,rounds:10,search_type:branch_and_bound,time_limit_per_round:6000,trace_visit:no,traversal:bft},_G1072,_G1073)
+     [14] 33.218204100001 ms: maze_test_options{maze:maze1,order:reorder,queue_type:priority,rounds:10,search_type:branch_and_bound,time_limit_per_round:6000,trace_visit:no,traversal:bft}
+       path:[s(4),e(7),s(3)]
+       term: bft(count(_G2869,avoid_repetitions(bound(map:distance_bounds([8,8]),compare,_G2876))),map:reorder_by_distance([8,8],map:map_edge_rel(4,[[w,w,w,w,w,w,w,w,w,w],[w,f,f,f,f,f,f,f,f,w],[w,f,w,w,w,w,w,w,f,w],[w,f,f,f,f,f,f,f,f,w],[w,f,w,w,w,w,w,w,w,w],[w,f,f,f,f,f,f,f,f,w],[w,f,w,f,w,f,w,w,f,w],[w,f,w,f,w,f,w,w,f,w],[w,f,f,f,f,f,f,w,f,w],[w,w,w,w,w,w,w,w,w,w]],10,10)),[1,1],maze_test_options{maze:maze1,order:reorder,queue_type:priority,rounds:10,search_type:branch_and_bound,time_limit_per_round:6000,trace_visit:no,traversal:bft},_G2866,_G2867)
+     [16] 34.14212220000081 ms: maze_test_options{maze:maze3,order:keep,queue_type:normal,rounds:10,search_type:branch_and_bound,time_limit_per_round:6000,trace_visit:no,traversal:bft}
+       path:[s(7),e(5),s,e(2),n]
+       term: bft(count(_G2419,avoid_repetitions(bound(map:distance_bounds([8,8]),compare,_G2426))),map:map_edge_rel(4,[[w,w,w,w,w,w,w,w,w,w],[w,f,f,f,f,f,f,f,f,w],[w,f,w,w,w,w,w,w,f,w],[w,f,f,f,f,f,f,f,f,w],[w,f,w,w,w,w,w,w,w,w],[w,f,f,f,f,f,f,f,f,f],[w,f,w,f,w,f,w,w,w,f],[w,f,w,f,w,f,w,w,f,f],[w,f,f,f,f,f,f,w,f,w],[w,w,w,w,w,w,f,f,f,w]],10,10),[1,1],maze_test_options{maze:maze3,order:keep,queue_type:normal,rounds:10,search_type:branch_and_bound,time_limit_per_round:6000,trace_visit:no,traversal:bft},_G2416,_G2417)
+     [16] 34.721156200001246 ms: maze_test_options{maze:maze3,order:reorder,queue_type:normal,rounds:10,search_type:branch_and_bound,time_limit_per_round:6000,trace_visit:no,traversal:bft}
+       path:[s(4),e(8),s(2),w,s]
+       term: bft(count(_G3325,avoid_repetitions(bound(map:distance_bounds([8,8]),compare,_G3332))),map:reorder_by_distance([8,8],map:map_edge_rel(4,[[w,w,w,w,w,w,w,w,w,w],[w,f,f,f,f,f,f,f,f,w],[w,f,w,w,w,w,w,w,f,w],[w,f,f,f,f,f,f,f,f,w],[w,f,w,w,w,w,w,w,w,w],[w,f,f,f,f,f,f,f,f,f],[w,f,w,f,w,f,w,w,w,f],[w,f,w,f,w,f,w,w,f,f],[w,f,f,f,f,f,f,w,f,w],[w,w,w,w,w,w,f,f,f,w]],10,10)),[1,1],maze_test_options{maze:maze3,order:reorder,queue_type:normal,rounds:10,search_type:branch_and_bound,time_limit_per_round:6000,trace_visit:no,traversal:bft},_G3322,_G3323)
+     [16] 36.2312811999999 ms: maze_test_options{maze:maze3,order:keep,queue_type:priority,rounds:10,search_type:branch_and_bound,time_limit_per_round:6000,trace_visit:no,traversal:bft}
+       path:[s(4),e(4),s(3),e,s,e(2),n]
+       term: bft(count(_G617,avoid_repetitions(bound(map:distance_bounds([8,8]),compare,_G624))),map:map_edge_rel(4,[[w,w,w,w,w,w,w,w,w,w],[w,f,f,f,f,f,f,f,f,w],[w,f,w,w,w,w,w,w,f,w],[w,f,f,f,f,f,f,f,f,w],[w,f,w,w,w,w,w,w,w,w],[w,f,f,f,f,f,f,f,f,f],[w,f,w,f,w,f,w,w,w,f],[w,f,w,f,w,f,w,w,f,f],[w,f,f,f,f,f,f,w,f,w],[w,w,w,w,w,w,f,f,f,w]],10,10),[1,1],maze_test_options{maze:maze3,order:keep,queue_type:priority,rounds:10,search_type:branch_and_bound,time_limit_per_round:6000,trace_visit:no,traversal:bft},_G614,_G615)
+     [16] 36.93897050000032 ms: maze_test_options{maze:maze3,order:reorder,queue_type:priority,rounds:10,search_type:branch_and_bound,time_limit_per_round:6000,trace_visit:no,traversal:bft}
+       path:[s(4),e(4),s(3),e,s,e(2),n]
+       term: bft(count(_G4314,avoid_repetitions(bound(map:distance_bounds([8,8]),compare,_G4321))),map:reorder_by_distance([8,8],map:map_edge_rel(4,[[w,w,w,w,w,w,w,w,w,w],[w,f,f,f,f,f,f,f,f,w],[w,f,w,w,w,w,w,w,f,w],[w,f,f,f,f,f,f,f,f,w],[w,f,w,w,w,w,w,w,w,w],[w,f,f,f,f,f,f,f,f,f],[w,f,w,f,w,f,w,w,w,f],[w,f,w,f,w,f,w,w,f,f],[w,f,f,f,f,f,f,w,f,w],[w,w,w,w,w,w,f,f,f,w]],10,10)),[1,1],maze_test_options{maze:maze3,order:reorder,queue_type:priority,rounds:10,search_type:branch_and_bound,time_limit_per_round:6000,trace_visit:no,traversal:bft},_G4311,_G4312)
+     [29] 51.07385759999943 ms: maze_test_options{maze:maze2,order:keep,queue_type:normal,rounds:10,search_type:branch_and_bound,time_limit_per_round:6000,trace_visit:no,traversal:bft}
+       path:[s(4),e(2),s,e(5),s(4),e(2),n(7),w(4)]
+       term: bft(count(_G3787,avoid_repetitions(bound(map:distance_bounds([5,2]),compare,_G3794))),map:map_edge_rel(4,[[f,f,f,f,f,f,f,f,f,f,f,f],[f,w,f,f,w,w,w,w,w,w,w,f],[f,w,f,f,w,f,f,f,f,f,w,f],[f,w,f,f,w,w,w,w,w,f,w,f],[f,f,f,f,f,f,f,f,w,f,w,f],[f,w,f,f,f,f,f,f,w,f,w,f],[f,w,w,w,w,w,w,f,w,f,w,f],[f,w,f,f,f,f,f,f,w,f,w,f],[f,w,f,w,w,w,w,f,w,f,w,f],[f,w,f,f,f,f,f,f,f,f,f,f]],10,12),[0,0],maze_test_options{maze:maze2,order:keep,queue_type:normal,rounds:10,search_type:branch_and_bound,time_limit_per_round:6000,trace_visit:no,traversal:bft},_G3784,_G3785)
+     [29] 51.97372620000351 ms: maze_test_options{maze:maze2,order:reorder,queue_type:normal,rounds:10,search_type:branch_and_bound,time_limit_per_round:6000,trace_visit:no,traversal:bft}
+       path:[e(3),s(4),e(4),s(5),e(2),n(7),w(4)]
+       term: bft(count(_G4784,avoid_repetitions(bound(map:distance_bounds([5,2]),compare,_G4791))),map:reorder_by_distance([5,2],map:map_edge_rel(4,[[f,f,f,f,f,f,f,f,f,f,f,f],[f,w,f,f,w,w,w,w,w,w,w,f],[f,w,f,f,w,f,f,f,f,f,w,f],[f,w,f,f,w,w,w,w,w,f,w,f],[f,f,f,f,f,f,f,f,w,f,w,f],[f,w,f,f,f,f,f,f,w,f,w,f],[f,w,w,w,w,w,w,f,w,f,w,f],[f,w,f,f,f,f,f,f,w,f,w,f],[f,w,f,w,w,w,w,f,w,f,w,f],[f,w,f,f,f,f,f,f,f,f,f,f]],10,12)),[0,0],maze_test_options{maze:maze2,order:reorder,queue_type:normal,rounds:10,search_type:branch_and_bound,time_limit_per_round:6000,trace_visit:no,traversal:bft},_G4781,_G4782)
+     [29] 54.1293636999967 ms: maze_test_options{maze:maze2,order:keep,queue_type:priority,rounds:10,search_type:branch_and_bound,time_limit_per_round:6000,trace_visit:no,traversal:bft}
+       path:[e(3),s(4),e(4),s(5),e(2),n(7),w(4)]
+       term: bft(count(_G93,avoid_repetitions(bound(map:distance_bounds([5,2]),compare,_G100))),map:map_edge_rel(4,[[f,f,f,f,f,f,f,f,f,f,f,f],[f,w,f,f,w,w,w,w,w,w,w,f],[f,w,f,f,w,f,f,f,f,f,w,f],[f,w,f,f,w,w,w,w,w,f,w,f],[f,f,f,f,f,f,f,f,w,f,w,f],[f,w,f,f,f,f,f,f,w,f,w,f],[f,w,w,w,w,w,w,f,w,f,w,f],[f,w,f,f,f,f,f,f,w,f,w,f],[f,w,f,w,w,w,w,f,w,f,w,f],[f,w,f,f,f,f,f,f,f,f,f,f]],10,12),[0,0],maze_test_options{maze:maze2,order:keep,queue_type:priority,rounds:10,search_type:branch_and_bound,time_limit_per_round:6000,trace_visit:no,traversal:bft},_G90,_G91)
+     [29] 55.376956300005986 ms: maze_test_options{maze:maze2,order:reorder,queue_type:priority,rounds:10,search_type:branch_and_bound,time_limit_per_round:6000,trace_visit:no,traversal:bft}
+       path:[e(3),s(4),e(4),s(5),e(2),n(7),w(4)]
+       term: bft(count(_G6176,avoid_repetitions(bound(map:distance_bounds([5,2]),compare,_G6183))),map:reorder_by_distance([5,2],map:map_edge_rel(4,[[f,f,f,f,f,f,f,f,f,f,f,f],[f,w,f,f,w,w,w,w,w,w,w,f],[f,w,f,f,w,f,f,f,f,f,w,f],[f,w,f,f,w,w,w,w,w,f,w,f],[f,f,f,f,f,f,f,f,w,f,w,f],[f,w,f,f,f,f,f,f,w,f,w,f],[f,w,w,w,w,w,w,f,w,f,w,f],[f,w,f,f,f,f,f,f,w,f,w,f],[f,w,f,w,w,w,w,f,w,f,w,f],[f,w,f,f,f,f,f,f,f,f,f,f]],10,12)),[0,0],maze_test_options{maze:maze2,order:reorder,queue_type:priority,rounds:10,search_type:branch_and_bound,time_limit_per_round:6000,trace_visit:no,traversal:bft},_G6173,_G6174)
+     [14] 71.50723620000008 ms: maze_test_options{maze:maze1,order:keep,queue_type:_G6145,rounds:10,search_type:branch_and_bound,time_limit_per_round:6000,trace_visit:no,traversal:dft}
+       path:[s(4),e(7),s(3)]
+       term: dft(count(_G5750,avoid_cycles(bound(map:distance_bounds([8,8]),compare,_G5757))),map:map_edge_rel(4,[[w,w,w,w,w,w,w,w,w,w],[w,f,f,f,f,f,f,f,f,w],[w,f,w,w,w,w,w,w,f,w],[w,f,f,f,f,f,f,f,f,w],[w,f,w,w,w,w,w,w,w,w],[w,f,f,f,f,f,f,f,f,w],[w,f,w,f,w,f,w,w,f,w],[w,f,w,f,w,f,w,w,f,w],[w,f,f,f,f,f,f,w,f,w],[w,w,w,w,w,w,w,w,w,w]],10,10),[1,1],_G5747,_G5748)
+     [14] 74.65012119999983 ms: maze_test_options{maze:maze1,order:reorder,queue_type:_G7118,rounds:10,search_type:branch_and_bound,time_limit_per_round:6000,trace_visit:no,traversal:dft}
+       path:[s(4),e(7),s(3)]
+       term: dft(count(_G6711,avoid_cycles(bound(map:distance_bounds([8,8]),compare,_G6718))),map:reorder_by_distance([8,8],map:map_edge_rel(4,[[w,w,w,w,w,w,w,w,w,w],[w,f,f,f,f,f,f,f,f,w],[w,f,w,w,w,w,w,w,f,w],[w,f,f,f,f,f,f,f,f,w],[w,f,w,w,w,w,w,w,w,w],[w,f,f,f,f,f,f,f,f,w],[w,f,w,f,w,f,w,w,f,w],[w,f,w,f,w,f,w,w,f,w],[w,f,f,f,f,f,f,w,f,w],[w,w,w,w,w,w,w,w,w,w]],10,10)),[1,1],_G6708,_G6709)
+     [16] 84.11998420000089 ms: maze_test_options{maze:maze3,order:keep,queue_type:_G5720,rounds:10,search_type:branch_and_bound,time_limit_per_round:6000,trace_visit:no,traversal:dft}
+       path:[s(7),e(5),s,e(2),n]
+       term: dft(count(_G5319,avoid_cycles(bound(map:distance_bounds([8,8]),compare,_G5326))),map:map_edge_rel(4,[[w,w,w,w,w,w,w,w,w,w],[w,f,f,f,f,f,f,f,f,w],[w,f,w,w,w,w,w,w,f,w],[w,f,f,f,f,f,f,f,f,w],[w,f,w,w,w,w,w,w,w,w],[w,f,f,f,f,f,f,f,f,f],[w,f,w,f,w,f,w,w,w,f],[w,f,w,f,w,f,w,w,f,f],[w,f,f,f,f,f,f,w,f,w],[w,w,w,w,w,w,f,f,f,w]],10,10),[1,1],_G5316,_G5317)
+     [16] 103.43034340000088 ms: maze_test_options{maze:maze3,order:reorder,queue_type:_G7984,rounds:10,search_type:branch_and_bound,time_limit_per_round:6000,trace_visit:no,traversal:dft}
+       path:[s(4),e(8),s(2),w,s]
+       term: dft(count(_G7571,avoid_cycles(bound(map:distance_bounds([8,8]),compare,_G7578))),map:reorder_by_distance([8,8],map:map_edge_rel(4,[[w,w,w,w,w,w,w,w,w,w],[w,f,f,f,f,f,f,f,f,w],[w,f,w,w,w,w,w,w,f,w],[w,f,f,f,f,f,f,f,f,w],[w,f,w,w,w,w,w,w,w,w],[w,f,f,f,f,f,f,f,f,f],[w,f,w,f,w,f,w,w,w,f],[w,f,w,f,w,f,w,w,f,f],[w,f,f,f,f,f,f,w,f,w],[w,w,w,w,w,w,f,f,f,w]],10,10)),[1,1],_G7568,_G7569)
+     [14] 2654.9260341000036 ms: maze_test_options{maze:maze1,order:keep,queue_type:_G7541,rounds:10,search_type:branch_and_bound,time_limit_per_round:6000,trace_visit:no,traversal:idt}
+       path:[s(4),e(7),s(3)]
+       term: idt(count(_G7148,bound(map:distance_bounds([8,8]),compare,_G7153)),map:map_edge_rel(4,[[w,w,w,w,w,w,w,w,w,w],[w,f,f,f,f,f,f,f,f,w],[w,f,w,w,w,w,w,w,f,w],[w,f,f,f,f,f,f,f,f,w],[w,f,w,w,w,w,w,w,w,w],[w,f,f,f,f,f,f,f,f,w],[w,f,w,f,w,f,w,w,f,w],[w,f,w,f,w,f,w,w,f,w],[w,f,f,f,f,f,f,w,f,w],[w,w,w,w,w,w,w,w,w,w]],10,10),[1,1],_G7145,_G7146)
+     [14] 2703.586963300006 ms: maze_test_options{maze:maze1,order:reorder,queue_type:_G8419,rounds:10,search_type:branch_and_bound,time_limit_per_round:6000,trace_visit:no,traversal:idt}
+       path:[s(4),e(7),s(3)]
+       term: idt(count(_G8014,bound(map:distance_bounds([8,8]),compare,_G8019)),map:reorder_by_distance([8,8],map:map_edge_rel(4,[[w,w,w,w,w,w,w,w,w,w],[w,f,f,f,f,f,f,f,f,w],[w,f,w,w,w,w,w,w,f,w],[w,f,f,f,f,f,f,f,f,w],[w,f,w,w,w,w,w,w,w,w],[w,f,f,f,f,f,f,f,f,w],[w,f,w,f,w,f,w,w,f,w],[w,f,w,f,w,f,w,w,f,w],[w,f,f,f,f,f,f,w,f,w],[w,w,w,w,w,w,w,w,w,w]],10,10)),[1,1],_G8011,_G8012)
+Failures:
+     maze_test_options{maze:maze3,order:keep,queue_type:_G8443,rounds:10,search_type:exhaustive,time_limit_per_round:6000,trace_visit:no,traversal:dft}
+       term: dft(count(_G8454,avoid_cycles(look_for_node([8,8],find_best(graph:compare_path_lengths,_G8469,_G8470)))),map:map_edge_rel(4,[[w,w,w,w,w,w,w,w,w,w],[w,f,f,f,f,f,f,f,f,w],[w,f,w,w,w,w,w,w,f,w],[w,f,f,f,f,f,f,f,f,w],[w,f,w,w,w,w,w,w,w,w],[w,f,f,f,f,f,f,f,f,f],[w,f,w,f,w,f,w,w,w,f],[w,f,w,f,w,f,w,w,f,f],[w,f,f,f,f,f,f,w,f,w],[w,w,w,w,w,w,f,f,f,w]],10,10),[1,1],_G8451,_G8452)
+     maze_test_options{maze:maze3,order:reorder,queue_type:_G8841,rounds:10,search_type:exhaustive,time_limit_per_round:6000,trace_visit:no,traversal:dft}
+       term: dft(count(_G8852,avoid_cycles(look_for_node([8,8],find_best(graph:compare_path_lengths,_G8867,_G8868)))),map:reorder_by_distance([8,8],map:map_edge_rel(4,[[w,w,w,w,w,w,w,w,w,w],[w,f,f,f,f,f,f,f,f,w],[w,f,w,w,w,w,w,w,f,w],[w,f,f,f,f,f,f,f,f,w],[w,f,w,w,w,w,w,w,w,w],[w,f,f,f,f,f,f,f,f,f],[w,f,w,f,w,f,w,w,w,f],[w,f,w,f,w,f,w,w,f,f],[w,f,f,f,f,f,f,w,f,w],[w,w,w,w,w,w,f,f,f,w]],10,10)),[1,1],_G8849,_G8850)
+     maze_test_options{maze:maze3,order:keep,queue_type:_G9251,rounds:10,search_type:exhaustive,time_limit_per_round:6000,trace_visit:no,traversal:idt}
+       term: idt(count(_G9262,look_for_node([8,8],find_best(graph:compare_path_lengths,_G9275,_G9276))),map:map_edge_rel(4,[[w,w,w,w,w,w,w,w,w,w],[w,f,f,f,f,f,f,f,f,w],[w,f,w,w,w,w,w,w,f,w],[w,f,f,f,f,f,f,f,f,w],[w,f,w,w,w,w,w,w,w,w],[w,f,f,f,f,f,f,f,f,f],[w,f,w,f,w,f,w,w,w,f],[w,f,w,f,w,f,w,w,f,f],[w,f,f,f,f,f,f,w,f,w],[w,w,w,w,w,w,f,f,f,w]],10,10),[1,1],_G9259,_G9260)
+     maze_test_options{maze:maze3,order:keep,queue_type:_G9647,rounds:10,search_type:branch_and_bound,time_limit_per_round:6000,trace_visit:no,traversal:idt}
+       term: idt(count(_G9658,bound(map:distance_bounds([8,8]),compare,_G9663)),map:map_edge_rel(4,[[w,w,w,w,w,w,w,w,w,w],[w,f,f,f,f,f,f,f,f,w],[w,f,w,w,w,w,w,w,f,w],[w,f,f,f,f,f,f,f,f,w],[w,f,w,w,w,w,w,w,w,w],[w,f,f,f,f,f,f,f,f,f],[w,f,w,f,w,f,w,w,w,f],[w,f,w,f,w,f,w,w,f,f],[w,f,f,f,f,f,f,w,f,w],[w,w,w,w,w,w,f,f,f,w]],10,10),[1,1],_G9655,_G9656)
+     maze_test_options{maze:maze3,order:reorder,queue_type:_G10042,rounds:10,search_type:exhaustive,time_limit_per_round:6000,trace_visit:no,traversal:idt}
+       term: idt(count(_G10053,look_for_node([8,8],find_best(graph:compare_path_lengths,_G10066,_G10067))),map:reorder_by_distance([8,8],map:map_edge_rel(4,[[w,w,w,w,w,w,w,w,w,w],[w,f,f,f,f,f,f,f,f,w],[w,f,w,w,w,w,w,w,f,w],[w,f,f,f,f,f,f,f,f,w],[w,f,w,w,w,w,w,w,w,w],[w,f,f,f,f,f,f,f,f,f],[w,f,w,f,w,f,w,w,w,f],[w,f,w,f,w,f,w,w,f,f],[w,f,f,f,f,f,f,w,f,w],[w,w,w,w,w,w,f,f,f,w]],10,10)),[1,1],_G10050,_G10051)
+     maze_test_options{maze:maze3,order:reorder,queue_type:_G10450,rounds:10,search_type:branch_and_bound,time_limit_per_round:6000,trace_visit:no,traversal:idt}
+       term: idt(count(_G10461,bound(map:distance_bounds([8,8]),compare,_G10466)),map:reorder_by_distance([8,8],map:map_edge_rel(4,[[w,w,w,w,w,w,w,w,w,w],[w,f,f,f,f,f,f,f,f,w],[w,f,w,w,w,w,w,w,f,w],[w,f,f,f,f,f,f,f,f,w],[w,f,w,w,w,w,w,w,w,w],[w,f,f,f,f,f,f,f,f,f],[w,f,w,f,w,f,w,w,w,f],[w,f,w,f,w,f,w,w,f,f],[w,f,f,f,f,f,f,w,f,w],[w,w,w,w,w,w,f,f,f,w]],10,10)),[1,1],_G10458,_G10459)
+     maze_test_options{maze:maze3,order:keep,queue_type:normal,rounds:10,search_type:exhaustive,time_limit_per_round:6000,trace_visit:no,traversal:bft}
+       term: bft(count(_G10869,avoid_repetitions(look_for_node([8,8],find_best(graph:compare_path_lengths,_G10884,_G10885)))),map:map_edge_rel(4,[[w,w,w,w,w,w,w,w,w,w],[w,f,f,f,f,f,f,f,f,w],[w,f,w,w,w,w,w,w,f,w],[w,f,f,f,f,f,f,f,f,w],[w,f,w,w,w,w,w,w,w,w],[w,f,f,f,f,f,f,f,f,f],[w,f,w,f,w,f,w,w,w,f],[w,f,w,f,w,f,w,w,f,f],[w,f,f,f,f,f,f,w,f,w],[w,w,w,w,w,w,f,f,f,w]],10,10),[1,1],maze_test_options{maze:maze3,order:keep,queue_type:normal,rounds:10,search_type:exhaustive,time_limit_per_round:6000,trace_visit:no,traversal:bft},_G10866,_G10867)
+     maze_test_options{maze:maze3,order:keep,queue_type:priority,rounds:10,search_type:exhaustive,time_limit_per_round:6000,trace_visit:no,traversal:bft}
+       term: bft(count(_G11286,avoid_repetitions(look_for_node([8,8],find_best(graph:compare_path_lengths,maze_test_upper_bound1,_G11302)))),map:map_edge_rel(4,[[w,w,w,w,w,w,w,w,w,w],[w,f,f,f,f,f,f,f,f,w],[w,f,w,w,w,w,w,w,f,w],[w,f,f,f,f,f,f,f,f,w],[w,f,w,w,w,w,w,w,w,w],[w,f,f,f,f,f,f,f,f,f],[w,f,w,f,w,f,w,w,w,f],[w,f,w,f,w,f,w,w,f,f],[w,f,f,f,f,f,f,w,f,w],[w,w,w,w,w,w,f,f,f,w]],10,10),[1,1],maze_test_options{maze:maze3,order:keep,queue_type:priority,rounds:10,search_type:exhaustive,time_limit_per_round:6000,trace_visit:no,traversal:bft},_G11283,_G11284)
+     maze_test_options{maze:maze3,order:reorder,queue_type:normal,rounds:10,search_type:exhaustive,time_limit_per_round:6000,trace_visit:no,traversal:bft}
+       term: bft(count(_G11703,avoid_repetitions(look_for_node([8,8],find_best(graph:compare_path_lengths,_G11718,_G11719)))),map:reorder_by_distance([8,8],map:map_edge_rel(4,[[w,w,w,w,w,w,w,w,w,w],[w,f,f,f,f,f,f,f,f,w],[w,f,w,w,w,w,w,w,f,w],[w,f,f,f,f,f,f,f,f,w],[w,f,w,w,w,w,w,w,w,w],[w,f,f,f,f,f,f,f,f,f],[w,f,w,f,w,f,w,w,w,f],[w,f,w,f,w,f,w,w,f,f],[w,f,f,f,f,f,f,w,f,w],[w,w,w,w,w,w,f,f,f,w]],10,10)),[1,1],maze_test_options{maze:maze3,order:reorder,queue_type:normal,rounds:10,search_type:exhaustive,time_limit_per_round:6000,trace_visit:no,traversal:bft},_G11700,_G11701)
+     maze_test_options{maze:maze3,order:reorder,queue_type:priority,rounds:10,search_type:exhaustive,time_limit_per_round:6000,trace_visit:no,traversal:bft}
+       term: bft(count(_G12132,avoid_repetitions(look_for_node([8,8],find_best(graph:compare_path_lengths,maze_test_upper_bound3,_G12148)))),map:reorder_by_distance([8,8],map:map_edge_rel(4,[[w,w,w,w,w,w,w,w,w,w],[w,f,f,f,f,f,f,f,f,w],[w,f,w,w,w,w,w,w,f,w],[w,f,f,f,f,f,f,f,f,w],[w,f,w,w,w,w,w,w,w,w],[w,f,f,f,f,f,f,f,f,f],[w,f,w,f,w,f,w,w,w,f],[w,f,w,f,w,f,w,w,f,f],[w,f,f,f,f,f,f,w,f,w],[w,w,w,w,w,w,f,f,f,w]],10,10)),[1,1],maze_test_options{maze:maze3,order:reorder,queue_type:priority,rounds:10,search_type:exhaustive,time_limit_per_round:6000,trace_visit:no,traversal:bft},_G12129,_G12130)
+     maze_test_options{maze:maze2,order:keep,queue_type:_G12549,rounds:10,search_type:exhaustive,time_limit_per_round:6000,trace_visit:no,traversal:dft}
+       term: dft(count(_G12560,avoid_cycles(look_for_node([5,2],find_best(graph:compare_path_lengths,_G12575,_G12576)))),map:map_edge_rel(4,[[f,f,f,f,f,f,f,f,f,f,f,f],[f,w,f,f,w,w,w,w,w,w,w,f],[f,w,f,f,w,f,f,f,f,f,w,f],[f,w,f,f,w,w,w,w,w,f,w,f],[f,f,f,f,f,f,f,f,w,f,w,f],[f,w,f,f,f,f,f,f,w,f,w,f],[f,w,w,w,w,w,w,f,w,f,w,f],[f,w,f,f,f,f,f,f,w,f,w,f],[f,w,f,w,w,w,w,f,w,f,w,f],[f,w,f,f,f,f,f,f,f,f,f,f]],10,12),[0,0],_G12557,_G12558)
+     maze_test_options{maze:maze2,order:keep,queue_type:_G13007,rounds:10,search_type:branch_and_bound,time_limit_per_round:6000,trace_visit:no,traversal:dft}
+       term: dft(count(_G13018,avoid_cycles(bound(map:distance_bounds([5,2]),compare,_G13025))),map:map_edge_rel(4,[[f,f,f,f,f,f,f,f,f,f,f,f],[f,w,f,f,w,w,w,w,w,w,w,f],[f,w,f,f,w,f,f,f,f,f,w,f],[f,w,f,f,w,w,w,w,w,f,w,f],[f,f,f,f,f,f,f,f,w,f,w,f],[f,w,f,f,f,f,f,f,w,f,w,f],[f,w,w,w,w,w,w,f,w,f,w,f],[f,w,f,f,f,f,f,f,w,f,w,f],[f,w,f,w,w,w,w,f,w,f,w,f],[f,w,f,f,f,f,f,f,f,f,f,f]],10,12),[0,0],_G13015,_G13016)
+     maze_test_options{maze:maze2,order:reorder,queue_type:_G13464,rounds:10,search_type:exhaustive,time_limit_per_round:6000,trace_visit:no,traversal:dft}
+       term: dft(count(_G13475,avoid_cycles(look_for_node([5,2],find_best(graph:compare_path_lengths,_G13490,_G13491)))),map:reorder_by_distance([5,2],map:map_edge_rel(4,[[f,f,f,f,f,f,f,f,f,f,f,f],[f,w,f,f,w,w,w,w,w,w,w,f],[f,w,f,f,w,f,f,f,f,f,w,f],[f,w,f,f,w,w,w,w,w,f,w,f],[f,f,f,f,f,f,f,f,w,f,w,f],[f,w,f,f,f,f,f,f,w,f,w,f],[f,w,w,w,w,w,w,f,w,f,w,f],[f,w,f,f,f,f,f,f,w,f,w,f],[f,w,f,w,w,w,w,f,w,f,w,f],[f,w,f,f,f,f,f,f,f,f,f,f]],10,12)),[0,0],_G13472,_G13473)
+     maze_test_options{maze:maze2,order:reorder,queue_type:_G13934,rounds:10,search_type:branch_and_bound,time_limit_per_round:6000,trace_visit:no,traversal:dft}
+       term: dft(count(_G13945,avoid_cycles(bound(map:distance_bounds([5,2]),compare,_G13952))),map:reorder_by_distance([5,2],map:map_edge_rel(4,[[f,f,f,f,f,f,f,f,f,f,f,f],[f,w,f,f,w,w,w,w,w,w,w,f],[f,w,f,f,w,f,f,f,f,f,w,f],[f,w,f,f,w,w,w,w,w,f,w,f],[f,f,f,f,f,f,f,f,w,f,w,f],[f,w,f,f,f,f,f,f,w,f,w,f],[f,w,w,w,w,w,w,f,w,f,w,f],[f,w,f,f,f,f,f,f,w,f,w,f],[f,w,f,w,w,w,w,f,w,f,w,f],[f,w,f,f,f,f,f,f,f,f,f,f]],10,12)),[0,0],_G13942,_G13943)
+     maze_test_options{maze:maze2,order:keep,queue_type:_G14403,rounds:10,search_type:exhaustive,time_limit_per_round:6000,trace_visit:no,traversal:idt}
+       term: idt(count(_G14414,look_for_node([5,2],find_best(graph:compare_path_lengths,_G14427,_G14428))),map:map_edge_rel(4,[[f,f,f,f,f,f,f,f,f,f,f,f],[f,w,f,f,w,w,w,w,w,w,w,f],[f,w,f,f,w,f,f,f,f,f,w,f],[f,w,f,f,w,w,w,w,w,f,w,f],[f,f,f,f,f,f,f,f,w,f,w,f],[f,w,f,f,f,f,f,f,w,f,w,f],[f,w,w,w,w,w,w,f,w,f,w,f],[f,w,f,f,f,f,f,f,w,f,w,f],[f,w,f,w,w,w,w,f,w,f,w,f],[f,w,f,f,f,f,f,f,f,f,f,f]],10,12),[0,0],_G14411,_G14412)
+     maze_test_options{maze:maze2,order:keep,queue_type:_G14859,rounds:10,search_type:branch_and_bound,time_limit_per_round:6000,trace_visit:no,traversal:idt}
+       term: idt(count(_G14870,bound(map:distance_bounds([5,2]),compare,_G14875)),map:map_edge_rel(4,[[f,f,f,f,f,f,f,f,f,f,f,f],[f,w,f,f,w,w,w,w,w,w,w,f],[f,w,f,f,w,f,f,f,f,f,w,f],[f,w,f,f,w,w,w,w,w,f,w,f],[f,f,f,f,f,f,f,f,w,f,w,f],[f,w,f,f,f,f,f,f,w,f,w,f],[f,w,w,w,w,w,w,f,w,f,w,f],[f,w,f,f,f,f,f,f,w,f,w,f],[f,w,f,w,w,w,w,f,w,f,w,f],[f,w,f,f,f,f,f,f,f,f,f,f]],10,12),[0,0],_G14867,_G14868)
+     maze_test_options{maze:maze2,order:reorder,queue_type:_G15314,rounds:10,search_type:exhaustive,time_limit_per_round:6000,trace_visit:no,traversal:idt}
+       term: idt(count(_G15325,look_for_node([5,2],find_best(graph:compare_path_lengths,_G15338,_G15339))),map:reorder_by_distance([5,2],map:map_edge_rel(4,[[f,f,f,f,f,f,f,f,f,f,f,f],[f,w,f,f,w,w,w,w,w,w,w,f],[f,w,f,f,w,f,f,f,f,f,w,f],[f,w,f,f,w,w,w,w,w,f,w,f],[f,f,f,f,f,f,f,f,w,f,w,f],[f,w,f,f,f,f,f,f,w,f,w,f],[f,w,w,w,w,w,w,f,w,f,w,f],[f,w,f,f,f,f,f,f,w,f,w,f],[f,w,f,w,w,w,w,f,w,f,w,f],[f,w,f,f,f,f,f,f,f,f,f,f]],10,12)),[0,0],_G15322,_G15323)
+     maze_test_options{maze:maze2,order:reorder,queue_type:_G15782,rounds:10,search_type:branch_and_bound,time_limit_per_round:6000,trace_visit:no,traversal:idt}
+       term: idt(count(_G15793,bound(map:distance_bounds([5,2]),compare,_G15798)),map:reorder_by_distance([5,2],map:map_edge_rel(4,[[f,f,f,f,f,f,f,f,f,f,f,f],[f,w,f,f,w,w,w,w,w,w,w,f],[f,w,f,f,w,f,f,f,f,f,w,f],[f,w,f,f,w,w,w,w,w,f,w,f],[f,f,f,f,f,f,f,f,w,f,w,f],[f,w,f,f,f,f,f,f,w,f,w,f],[f,w,w,w,w,w,w,f,w,f,w,f],[f,w,f,f,f,f,f,f,w,f,w,f],[f,w,f,w,w,w,w,f,w,f,w,f],[f,w,f,f,f,f,f,f,f,f,f,f]],10,12)),[0,0],_G15790,_G15791)
+     maze_test_options{maze:maze2,order:keep,queue_type:normal,rounds:10,search_type:exhaustive,time_limit_per_round:6000,trace_visit:no,traversal:bft}
+       term: bft(count(_G16261,avoid_repetitions(look_for_node([5,2],find_best(graph:compare_path_lengths,_G16276,_G16277)))),map:map_edge_rel(4,[[f,f,f,f,f,f,f,f,f,f,f,f],[f,w,f,f,w,w,w,w,w,w,w,f],[f,w,f,f,w,f,f,f,f,f,w,f],[f,w,f,f,w,w,w,w,w,f,w,f],[f,f,f,f,f,f,f,f,w,f,w,f],[f,w,f,f,f,f,f,f,w,f,w,f],[f,w,w,w,w,w,w,f,w,f,w,f],[f,w,f,f,f,f,f,f,w,f,w,f],[f,w,f,w,w,w,w,f,w,f,w,f],[f,w,f,f,f,f,f,f,f,f,f,f]],10,12),[0,0],maze_test_options{maze:maze2,order:keep,queue_type:normal,rounds:10,search_type:exhaustive,time_limit_per_round:6000,trace_visit:no,traversal:bft},_G16258,_G16259)
+     maze_test_options{maze:maze2,order:keep,queue_type:priority,rounds:10,search_type:exhaustive,time_limit_per_round:6000,trace_visit:no,traversal:bft}
+       term: bft(count(_G16738,avoid_repetitions(look_for_node([5,2],find_best(graph:compare_path_lengths,maze_test_upper_bound5,_G16754)))),map:map_edge_rel(4,[[f,f,f,f,f,f,f,f,f,f,f,f],[f,w,f,f,w,w,w,w,w,w,w,f],[f,w,f,f,w,f,f,f,f,f,w,f],[f,w,f,f,w,w,w,w,w,f,w,f],[f,f,f,f,f,f,f,f,w,f,w,f],[f,w,f,f,f,f,f,f,w,f,w,f],[f,w,w,w,w,w,w,f,w,f,w,f],[f,w,f,f,f,f,f,f,w,f,w,f],[f,w,f,w,w,w,w,f,w,f,w,f],[f,w,f,f,f,f,f,f,f,f,f,f]],10,12),[0,0],maze_test_options{maze:maze2,order:keep,queue_type:priority,rounds:10,search_type:exhaustive,time_limit_per_round:6000,trace_visit:no,traversal:bft},_G16735,_G16736)
+     maze_test_options{maze:maze2,order:reorder,queue_type:normal,rounds:10,search_type:exhaustive,time_limit_per_round:6000,trace_visit:no,traversal:bft}
+       term: bft(count(_G17215,avoid_repetitions(look_for_node([5,2],find_best(graph:compare_path_lengths,_G17230,_G17231)))),map:reorder_by_distance([5,2],map:map_edge_rel(4,[[f,f,f,f,f,f,f,f,f,f,f,f],[f,w,f,f,w,w,w,w,w,w,w,f],[f,w,f,f,w,f,f,f,f,f,w,f],[f,w,f,f,w,w,w,w,w,f,w,f],[f,f,f,f,f,f,f,f,w,f,w,f],[f,w,f,f,f,f,f,f,w,f,w,f],[f,w,w,w,w,w,w,f,w,f,w,f],[f,w,f,f,f,f,f,f,w,f,w,f],[f,w,f,w,w,w,w,f,w,f,w,f],[f,w,f,f,f,f,f,f,f,f,f,f]],10,12)),[0,0],maze_test_options{maze:maze2,order:reorder,queue_type:normal,rounds:10,search_type:exhaustive,time_limit_per_round:6000,trace_visit:no,traversal:bft},_G17212,_G17213)
+     maze_test_options{maze:maze2,order:reorder,queue_type:priority,rounds:10,search_type:exhaustive,time_limit_per_round:6000,trace_visit:no,traversal:bft}
+       term: bft(count(_G17704,avoid_repetitions(look_for_node([5,2],find_best(graph:compare_path_lengths,maze_test_upper_bound7,_G17720)))),map:reorder_by_distance([5,2],map:map_edge_rel(4,[[f,f,f,f,f,f,f,f,f,f,f,f],[f,w,f,f,w,w,w,w,w,w,w,f],[f,w,f,f,w,f,f,f,f,f,w,f],[f,w,f,f,w,w,w,w,w,f,w,f],[f,f,f,f,f,f,f,f,w,f,w,f],[f,w,f,f,f,f,f,f,w,f,w,f],[f,w,w,w,w,w,w,f,w,f,w,f],[f,w,f,f,f,f,f,f,w,f,w,f],[f,w,f,w,w,w,w,f,w,f,w,f],[f,w,f,f,f,f,f,f,f,f,f,f]],10,12)),[0,0],maze_test_options{maze:maze2,order:reorder,queue_type:priority,rounds:10,search_type:exhaustive,time_limit_per_round:6000,trace_visit:no,traversal:bft},_G17701,_G17702)
+     maze_test_options{maze:maze1,order:keep,queue_type:_G18181,rounds:10,search_type:exhaustive,time_limit_per_round:6000,trace_visit:no,traversal:dft}
+       term: dft(count(_G18192,avoid_cycles(look_for_node([8,8],find_best(graph:compare_path_lengths,_G18207,_G18208)))),map:map_edge_rel(4,[[w,w,w,w,w,w,w,w,w,w],[w,f,f,f,f,f,f,f,f,w],[w,f,w,w,w,w,w,w,f,w],[w,f,f,f,f,f,f,f,f,w],[w,f,w,w,w,w,w,w,w,w],[w,f,f,f,f,f,f,f,f,w],[w,f,w,f,w,f,w,w,f,w],[w,f,w,f,w,f,w,w,f,w],[w,f,f,f,f,f,f,w,f,w],[w,w,w,w,w,w,w,w,w,w]],10,10),[1,1],_G18189,_G18190)
+     maze_test_options{maze:maze1,order:reorder,queue_type:_G18579,rounds:10,search_type:exhaustive,time_limit_per_round:6000,trace_visit:no,traversal:dft}
+       term: dft(count(_G18590,avoid_cycles(look_for_node([8,8],find_best(graph:compare_path_lengths,_G18605,_G18606)))),map:reorder_by_distance([8,8],map:map_edge_rel(4,[[w,w,w,w,w,w,w,w,w,w],[w,f,f,f,f,f,f,f,f,w],[w,f,w,w,w,w,w,w,f,w],[w,f,f,f,f,f,f,f,f,w],[w,f,w,w,w,w,w,w,w,w],[w,f,f,f,f,f,f,f,f,w],[w,f,w,f,w,f,w,w,f,w],[w,f,w,f,w,f,w,w,f,w],[w,f,f,f,f,f,f,w,f,w],[w,w,w,w,w,w,w,w,w,w]],10,10)),[1,1],_G18587,_G18588)
+     maze_test_options{maze:maze1,order:keep,queue_type:_G18989,rounds:10,search_type:exhaustive,time_limit_per_round:6000,trace_visit:no,traversal:idt}
+       term: idt(count(_G19000,look_for_node([8,8],find_best(graph:compare_path_lengths,_G19013,_G19014))),map:map_edge_rel(4,[[w,w,w,w,w,w,w,w,w,w],[w,f,f,f,f,f,f,f,f,w],[w,f,w,w,w,w,w,w,f,w],[w,f,f,f,f,f,f,f,f,w],[w,f,w,w,w,w,w,w,w,w],[w,f,f,f,f,f,f,f,f,w],[w,f,w,f,w,f,w,w,f,w],[w,f,w,f,w,f,w,w,f,w],[w,f,f,f,f,f,f,w,f,w],[w,w,w,w,w,w,w,w,w,w]],10,10),[1,1],_G18997,_G18998)
+     maze_test_options{maze:maze1,order:reorder,queue_type:_G19385,rounds:10,search_type:exhaustive,time_limit_per_round:6000,trace_visit:no,traversal:idt}
+       term: idt(count(_G19396,look_for_node([8,8],find_best(graph:compare_path_lengths,_G19409,_G19410))),map:reorder_by_distance([8,8],map:map_edge_rel(4,[[w,w,w,w,w,w,w,w,w,w],[w,f,f,f,f,f,f,f,f,w],[w,f,w,w,w,w,w,w,f,w],[w,f,f,f,f,f,f,f,f,w],[w,f,w,w,w,w,w,w,w,w],[w,f,f,f,f,f,f,f,f,w],[w,f,w,f,w,f,w,w,f,w],[w,f,w,f,w,f,w,w,f,w],[w,f,f,f,f,f,f,w,f,w],[w,w,w,w,w,w,w,w,w,w]],10,10)),[1,1],_G19393,_G19394)
+     maze_test_options{maze:maze1,order:keep,queue_type:normal,rounds:10,search_type:exhaustive,time_limit_per_round:6000,trace_visit:no,traversal:bft}
+       term: bft(count(_G19805,avoid_repetitions(look_for_node([8,8],find_best(graph:compare_path_lengths,_G19820,_G19821)))),map:map_edge_rel(4,[[w,w,w,w,w,w,w,w,w,w],[w,f,f,f,f,f,f,f,f,w],[w,f,w,w,w,w,w,w,f,w],[w,f,f,f,f,f,f,f,f,w],[w,f,w,w,w,w,w,w,w,w],[w,f,f,f,f,f,f,f,f,w],[w,f,w,f,w,f,w,w,f,w],[w,f,w,f,w,f,w,w,f,w],[w,f,f,f,f,f,f,w,f,w],[w,w,w,w,w,w,w,w,w,w]],10,10),[1,1],maze_test_options{maze:maze1,order:keep,queue_type:normal,rounds:10,search_type:exhaustive,time_limit_per_round:6000,trace_visit:no,traversal:bft},_G19802,_G19803)
+     maze_test_options{maze:maze1,order:keep,queue_type:priority,rounds:10,search_type:exhaustive,time_limit_per_round:6000,trace_visit:no,traversal:bft}
+       term: bft(count(_G20222,avoid_repetitions(look_for_node([8,8],find_best(graph:compare_path_lengths,maze_test_upper_bound9,_G20238)))),map:map_edge_rel(4,[[w,w,w,w,w,w,w,w,w,w],[w,f,f,f,f,f,f,f,f,w],[w,f,w,w,w,w,w,w,f,w],[w,f,f,f,f,f,f,f,f,w],[w,f,w,w,w,w,w,w,w,w],[w,f,f,f,f,f,f,f,f,w],[w,f,w,f,w,f,w,w,f,w],[w,f,w,f,w,f,w,w,f,w],[w,f,f,f,f,f,f,w,f,w],[w,w,w,w,w,w,w,w,w,w]],10,10),[1,1],maze_test_options{maze:maze1,order:keep,queue_type:priority,rounds:10,search_type:exhaustive,time_limit_per_round:6000,trace_visit:no,traversal:bft},_G20219,_G20220)
+     maze_test_options{maze:maze1,order:reorder,queue_type:normal,rounds:10,search_type:exhaustive,time_limit_per_round:6000,trace_visit:no,traversal:bft}
+       term: bft(count(_G20639,avoid_repetitions(look_for_node([8,8],find_best(graph:compare_path_lengths,_G20654,_G20655)))),map:reorder_by_distance([8,8],map:map_edge_rel(4,[[w,w,w,w,w,w,w,w,w,w],[w,f,f,f,f,f,f,f,f,w],[w,f,w,w,w,w,w,w,f,w],[w,f,f,f,f,f,f,f,f,w],[w,f,w,w,w,w,w,w,w,w],[w,f,f,f,f,f,f,f,f,w],[w,f,w,f,w,f,w,w,f,w],[w,f,w,f,w,f,w,w,f,w],[w,f,f,f,f,f,f,w,f,w],[w,w,w,w,w,w,w,w,w,w]],10,10)),[1,1],maze_test_options{maze:maze1,order:reorder,queue_type:normal,rounds:10,search_type:exhaustive,time_limit_per_round:6000,trace_visit:no,traversal:bft},_G20636,_G20637)
+     maze_test_options{maze:maze1,order:reorder,queue_type:priority,rounds:10,search_type:exhaustive,time_limit_per_round:6000,trace_visit:no,traversal:bft}
+       term: bft(count(_G21068,avoid_repetitions(look_for_node([8,8],find_best(graph:compare_path_lengths,maze_test_upper_bound11,_G21084)))),map:reorder_by_distance([8,8],map:map_edge_rel(4,[[w,w,w,w,w,w,w,w,w,w],[w,f,f,f,f,f,f,f,f,w],[w,f,w,w,w,w,w,w,f,w],[w,f,f,f,f,f,f,f,f,w],[w,f,w,w,w,w,w,w,w,w],[w,f,f,f,f,f,f,f,f,w],[w,f,w,f,w,f,w,w,f,w],[w,f,w,f,w,f,w,w,f,w],[w,f,f,f,f,f,f,w,f,w],[w,w,w,w,w,w,w,w,w,w]],10,10)),[1,1],maze_test_options{maze:maze1,order:reorder,queue_type:priority,rounds:10,search_type:exhaustive,time_limit_per_round:6000,trace_visit:no,traversal:bft},_G21065,_G21066)
+'\n'
