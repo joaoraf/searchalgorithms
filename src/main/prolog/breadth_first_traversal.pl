@@ -1,48 +1,44 @@
 :- module(breadth_first_search,[ 	   
- 	   bft//3
+ 	   bft//3,
+ 	   bft//4
 	]).
 
 :- use_module(dcg_extras).
-
 :- use_module(visitor).
+:- use_module(queues).
 
 :- meta_predicate bft(+,3,+,+,-).
+
+:- meta_predicate bft(+,3,+,+,+,-).
 	
-bft(Visitor,EdgeRel,Vertice) --> wrapping(Visitor,bft_0(EdgeRel,Vertice)).
+bft(Visitor,EdgeRel,Vertice) --> bft(Visitor,EdgeRel,Vertice,normal).	
+	
+bft(Visitor,EdgeRel,Vertice,QueueType) --> wrapping(Visitor,bft_0(EdgeRel,Vertice,QueueType)).
 
 				
-bft_0(EdgeRel,Vertice,Visitor) --> bft_0(Visitor,EdgeRel,[[[[],Vertice]]],[]).		
+bft_0(EdgeRel,Vertice,QueueType,Visitor) -->
+  { make_queue(QueueType,Queue),
+    queue_put([[[],Vertice]],Queue,QueueIn) }, 
+  bft_1(Visitor,EdgeRel,QueueIn,_QueueOut).		
 
-bft_0(_Visitor,_EdgeRel,[],[]) --> { ! },dcg_true.
-bft_0(Visitor,EdgeRel,[[]|XS],YS) --> { ! },
-	bft_0(Visitor,EdgeRel,XS,YS).
-bft_0(Visitor,EdgeRel,XS,[[]|YS]) --> { ! },
-	bft_0(Visitor,EdgeRel,XS,YS).	
-bft_0(Visitor,EdgeRel,[],RevQueue) -->
-	%{ format('btf_0/4[2]: start\n') }, 
-	{ reverse(RevQueue,Queue) },
-	%{ format('btf_0/4[2]: end\n') },
-	bft_0(Visitor,EdgeRel,Queue,[]).
-bft_0(Visitor,EdgeRel,[[[Path,Vertice]|Q]|Queue],RevQueue) -->
-	%{ format('btf_0/4[3]: start\n') },
-        call_visitor(Visitor,Vertice,Path,Action),
-        %{ format('btf_0/4[3]: end\n') },         	
-	bft_1(Visitor,EdgeRel,Vertice,Path,Action,[Q|Queue],RevQueue). 	
+bft_1(_Visitor,_EdgeRel,Qin,Qin) --> { queue_empty(Qin), ! },dcg_true.
+bft_1(Visitor,EdgeRel,Qin,Qout) -->
+        { queue_next([Path,Vertice],Qin,Qout1) },	
+        call_visitor(Visitor,Vertice,Path,Action),                 
+	bft_2(Visitor,EdgeRel,Vertice,Path,Action,Qout1,Qout). 	
 
-bft_1(Visitor,EdgeRel,_Vertice,_Path,stop,Queue,RevQueue) --> 
-	bft_0(Visitor,EdgeRel,Queue,RevQueue).		
-bft_1(Visitor,EdgeRel,Vertice,Path,skip,Queue,RevQueue) -->
-	bft_1(Visitor,EdgeRel,Vertice,Path,continue,Queue,RevQueue).	
-bft_1(Visitor,EdgeRel,Vertice,Path,continue,Queue,RevQueue) -->
-	%{ format('btf_1: start\n') },
+bft_2(Visitor,EdgeRel,_Vertice,_Path,stop,Qin,Qout) --> 
+	bft_1(Visitor,EdgeRel,Qin,Qout).		
+bft_2(Visitor,EdgeRel,Vertice,Path,skip,Qin,Qout) -->
+	bft_2(Visitor,EdgeRel,Vertice,Path,continue,Qin,Qout).	
+bft_2(Visitor,EdgeRel,Vertice,Path,continue,Qin,Qout) -->
 	{ (
 		findall(
 			[[[Vertice,Edge]|Path],Vertice1],
 			call(EdgeRel,Vertice,Edge,Vertice1),
 			NextVisits),
-	  	RevQueue1 = [NextVisits | RevQueue],
+	  	queue_put(NextVisits,Qin,Qout1),
 	  	! ) ;
-	  (  RevQueue1 = RevQueue ) },
-	%{ format('btf_1: end\n') },  
-	bft_0(Visitor,EdgeRel,Queue,RevQueue1).	 
-	        
+	  (  Qout1 = Qin ) },
+	bft_1(Visitor,EdgeRel,Qout1,Qout).	 
+

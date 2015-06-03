@@ -4,7 +4,8 @@
 	as_birds_fly/3,
 	distance_bounds/3,
 	distance_compare/4,
-	reorder_by_distance/5
+	reorder_by_distance/5,
+	moves_cost/2
 	]).
 
 :- use_module(library(clpfd)).
@@ -30,7 +31,8 @@ map_edge_rel(Dirs,Map,Height,Width,P1,Move,P2) :-
 	cell(Map,Height,Width,P1,C1),
 	C1 \= w,
 	cell(Map,Height,Width,P2,C2),
-	C2 \= w.
+	C2 \= w
+	.
 
 positions(Dirs,Height,Width,[X1,Y1],Move,[X2,Y2]) :-
 %	format('positions(Dirs=~p,Height=~p,Width=~p,P1=~p,Move=~p,P2=~p)\n',
@@ -85,25 +87,37 @@ normalize_moves([M1|[M2|MS]],RM,CM) :-
 normalize_moves([M],RM,CM) :-
 	normalize_moves([],[M|RM],CM).		
 
+moves_cost(MS,C) :- moves_cost(MS,0,C).
+moves_cost([], C,C).
+moves_cost([M|MS],C,CF) :-
+	functor(M,_,1),
+	arg(1,M,N),
+	C1 is C + N,
+	moves_cost(MS,C1,CF).
+moves_cost([M|MS],C,CF) :-
+	functor(M,_,0),	
+	C1 is C + 1,
+	moves_cost(MS,C1,CF).	
+
 as_birds_fly([X1,Y1],[X2,Y2],D) :-
 	DX is X1 - X2,
 	DY is Y1 - Y2,
 	D is sqrt(DX*DX + DY*DY).	
 
-distance_bounds(V,[V,P],solution(D)) :-	
+distance_bounds(V,[P,V],solution(D)) :-	
 	length(P,D),!.
 distance_bounds(Ref,P,lower_bound(D)) :-
 	total_distance(Ref,P,D),!.
 		
-total_distance(V1,[V,P],D) :-
+total_distance(V1,[P,V],D) :-
 	length(P,D1),
 	as_birds_fly(V,V1,D2),
 	D is D1 + D2.
 	
 distance_compare(Ref,Res,P1,P2) :-
-	graph:compare_vertices(graph:compare_map(as_birds_fly(Ref),compare),Res,P1,P2).
+	graph:compare_vertices(graph:compare_map(map:as_birds_fly(Ref),compare),Res,P1,P2).
 
 :- meta_predicate reorder_by_distance(+,3,?,?,?).
 
 reorder_by_distance(Ref,Rel,P1,E,P2) :- 
-	graph:reorder_edges(distance_compare(Ref),Rel,P1,E,P2).
+	graph:reorder_edges(graph:compare_compose(map:distance_compare(Ref),compare),Rel,P1,E,P2).

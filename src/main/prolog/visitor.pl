@@ -151,14 +151,14 @@ avoid_rep_pred(V,_P,continue,XS,XS1) :-
 avoid_rep_pred(V,_P,stop,XS,XS) :-
 	ord_memberchk(V,XS).
 
-expand_visitor_1(depth_select(Depth,Visitor),DecoratedVisitor) :-	
+expand_visitor_1(depth_select(Depth,Visitor,AnyVisit),DecoratedVisitor) :-	
 	expand_visitor(Visitor,V1),	
-	make_decorated_visitor([],_,visitor:depth_select_pred(Depth),V1,DecoratedVisitor),!.
+	make_decorated_visitor(no,AnyVisit,visitor:depth_select_pred(Depth),V1,DecoratedVisitor),!.
 
 depth_select_pred(Depth,_V,P,skip,XS,XS) :-	
 	length(P,Depth1),	
 	Depth1 < Depth,!.
-depth_select_pred(Depth,_V,P,continue,XS,XS) :-
+depth_select_pred(Depth,_V,P,continue,_,yes) :-
 	length(P,Depth),!.
 depth_select_pred(Depth,_V,P,stop,XS,XS) :-
 	length(P,Depth1),
@@ -180,18 +180,19 @@ expand_visitor_1(count(Count,Visitor),DecoratedVisitor) :-
 count_visitor_pred(_V,_P,continue,Count,Count1) :-
 	Count1 is Count + 1.
 
-expand_visitor_1(trace(Visitor),DecoratedVisitor) :-
+expand_visitor_1(trace_visit(Visitor),DecoratedVisitor) :-
 	make_decorated_visitor(0,_,visitor:trace_visitor_pred,Visitor,DecoratedVisitor),!. 
 
 trace_visitor_pred(V,P,continue,Count,Count1) :-
 	Count1 is Count + 1,
 	reverse(P,P1),
 	path_to_string(PathStr,P1),
-	format('[~k] ~s ~k\n',[Count,PathStr,V]).		
+	length(P1,D),
+	format('\n[~k,~k] ~s ~k\n',[Count,D,PathStr,V]).		
 
 path_to_string("",[]).	
 path_to_string(Res,[[V,E]|R]) :- 
-	format(string(S),' ~k --(~k)-->',[V,E]),
+	format(string(S),'~k-(~k)->',[V,E]),
 	path_to_string(Res1,R),
 	string_concat(S,Res1,Res).	
 	
@@ -224,28 +225,33 @@ find_at_most_visitor_pred(Pred,V,P,continue,[Value,AtMost],[NewValue,AtMost1]) :
 find_at_most_visitor_pred(_Pred,_V,_P,continue,State,State) :- !.
 
 expand_visitor_1(find_best(ComparePred,Value),DecoratedVisitor) :-
-	make_visitor(visitor:find_best_visitor_pred(ComparePred),not_found,Value,DecoratedVisitor),!.
-find_best_visitor_pred(_Pred,V,P,continue,not_found,[V,P]) :- !.	
-find_best_visitor_pred(ComparePred,V,P,continue,[V1,P1],[V,P]) :-
-	call(ComparePred,(<),[V,P],[V1,P1]),!.
-find_best_visitor_pred(_Pred,_V,_P,continue,State,State) :-  !.
+	make_visitor(visitor:find_best_visitor_pred(ComparePred,_),not_found,Value,DecoratedVisitor),!.
+expand_visitor_1(find_best(ComparePred,UpperBoundSym,Value),DecoratedVisitor) :-	
+	make_visitor(visitor:find_best_visitor_pred(ComparePred,UpperBoundSym),not_found,Value,DecoratedVisitor),!.
+find_best_visitor_pred(_Pred,US,V,P,continue,not_found,[V,P]) :- !,
+	queue:set_upper_bound(US,[P,V]). 		
+find_best_visitor_pred(ComparePred,US,V,P,continue,[V1,P1],[V,P]) :-	
+	call(ComparePred,(<),[V,P],[V1,P1]),!,
+	queue:set_upper_bound(US,[P,V]).
+find_best_visitor_pred(_Pred,_US,_V,_P,continue,State,State) :-	
+	!.
 
 
 
 expand_visitor_1(bound(BoundaryPred,CompareValuePred,Value),DecoratedVisitor) :-
 	make_visitor(visitor:bound_visitor_pred(BoundaryPred,CompareValuePred),undefined,Value,DecoratedVisitor),!.
 bound_visitor_pred(BoundaryPred,_CompareValuePred,V,P,continue,undefined,[V,P,Value]) :- 	
-	call(BoundaryPred,[V,P],solution(Value)),	
+	call(BoundaryPred,[P,V],solution(Value)),	
 	!.
 bound_visitor_pred(BoundaryPred,_CompareValuePred,V,P,continue,undefined,undefined) :- 
-	call(BoundaryPred,[V,P],lower_bound(_Value)),	
+	call(BoundaryPred,[P,V],lower_bound(_Value)),	
 	!.			
 bound_visitor_pred(BoundaryPred,CompareValuePred,V,P,continue,[_V1,_P1,Value1],[V,P,Value]) :-	
-	call(BoundaryPred,[V,P],solution(Value)),	
+	call(BoundaryPred,[P,V],solution(Value)),	
 	call(CompareValuePred,(<),Value,Value1),!.	
 bound_visitor_pred(BoundaryPred,CompareValuePred,V,P,continue,State,State) :-	
 	State = [_V1,_P1,Value1],	
-	call(BoundaryPred,[V,P],lower_bound(Value)),	
+	call(BoundaryPred,[P,V],lower_bound(Value)),	
 	\+ call(CompareValuePred,(>),Value,Value1),!.	
 bound_visitor_pred(_BoundaryPred,_CompareValuePred,_V,_P,stop,State,State) :- !.
 
